@@ -1,24 +1,12 @@
 :root {
-  --card-height: 720px; 
+  --card-height: 720px;
   --card-width: calc(var(--card-height) / 1.25);
-
-  /*paleta de colores*/
-  --color-white: #ffffff;
-  --color-black: #000000;
-
-  --color-grey: #342c2c;
-  --color-red-primary: #aa130f;
-  --color-red-secondary: #902020;
 }
 
 * {
   box-sizing: border-box;
 }
-
-
-/* ---cards--- */
-
-.cards__conteiner {
+body {
   width: 100vw;
   height: 100vh;
   margin: 0;
