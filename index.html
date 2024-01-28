@@ -4,58 +4,100 @@
     <meta charset="UTF-16" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/Akatsuki icon.jpg" type="image/x-icon" />
     <link rel="stylesheet" href="./style.css" />
-    <title>Document</title>
+    <title>Akasuki teem</title>
   </head>
   <body>
     <header>
-      <figure>
-        <img src="./assets/Akatsuki team.jpg" alt="" />
-        <div class="shadow"></div>
-        <h1>Akatsuki assemble</h1>
-      </figure>
+      <picture class="box box-imagen">
+        <img src="./assets/Akatsuki team.jpg" />
+      </picture>
+      <h1 class="header_title">Akatsuki assemble</h1>
+      <div class="box box-shadow">
+        <div class="shadow--sticky"></div>
+      </div>
     </header>
-    <main>
-      <article>
-        <ul class="cards__conteiner" >
+    <nav>
+      <ul class="card_container">
+        <a href="#main">
           <li class="card">
-              <figure class="wrapper">
-                <img
-                  src="./assets/Deidara/🔥Deidara🔥.webp"
-                  class="cover-image"
-                />
-              </figure>      
+            <figure class="wrapper">
               <img
-                src="./assets/Deidara/OIG.tr63Bud.png"
-                class="title"
+                src="../../assets/Deidara/🔥Deidara🔥.webp"
+                class="cover-image"
               />
-              <img
-                src="./assets/Deidara/Deidara.png"
-                class="character"
-              />
+            </figure>      
+            <img
+              src="../../assets/Deidara/OIG.tr63Bud.png"
+              class="card_title"
+            />
+            <img
+              src="../../assets/Deidara/Deidara.png"
+              class="character"
+            />
           </li>
+        </a>
+        <a href="#main">
+          <li class="card">
+            <figure class="wrapper">
+              <img
+                src="../../assets/Deidara/🔥Deidara🔥.webp"
+                class="cover-image"
+              />
+            </figure>      
+            <img
+              src="../../assets/Deidara/OIG.tr63Bud.png"
+              class="card_title"
+            />
+            <img
+              src="../../assets/Deidara/Deidara.png"
+              class="character"
+            />
+          </li>
+        </a>
+        <a href="#main">
+          <li class="card">
+            <figure class="wrapper">
+              <img
+                src="../../assets/Deidara/🔥Deidara🔥.webp"
+                class="cover-image"
+              />
+            </figure>      
+            <img
+              src="../../assets/Deidara/OIG.tr63Bud.png"
+              class="card_title"
+            />
+            <img
+              src="../../assets/Deidara/Deidara.png"
+              class="character"
+            />
+          </li> 
+        </a>
+      </ul>
+    </nav>
+    <main id="main">
+      <figure class="character_container">
+        <img class="character_img" src="../../assets/Deidara/🔥Deidara🔥.webp" alt="Deidara">
+          <h1 class="character_name">デイダラ</h1>
+          <p  class="character_quote">"Katsu"</p>
+      </figure>
+      <section class="attributes_container">
+        <ul class="attributes_title">
+          <li>Cumpleaños:</li>
+          <li>Altura:</li>
+          <li>Peso:</li>
+          <li>Aldea:</li>
+          <li>Habilidad:</li>
         </ul>
-      </article>
-      <!-- ---------- -->
-      <article>
-        <!-- <section>
-                    <img src="https://ggayane.github.io/css-experiments/cards/dark_rider-cover.jpg" class="cover-image" />
-            </section> -->
-        <section>
-          <div>
-            <h2>Subtítulo</h2>
-            <blockquote>
-              <p>Este es un bloque de texto dentro de una cita.</p>
-            </blockquote>
-          </div>
-          <ul>
-            <li>Elemento de lista 1</li>
-            <li>Elemento de lista 2</li>
-            <li>Elemento de lista 3</li>
-          </ul>
-        </section>
-      </article>
+        <ul class="attributes_date">
+          <li>5 de mayo</li>
+          <li>1,66m</li>
+          <li>50.8kg</li>
+          <li>Iwagakure</li>
+          <li>Explosión</li>
+        </ul>
+      </section>  
     </main>
   </body>
-  <script src="./index.js"></script>
 </html>
