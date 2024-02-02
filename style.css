@@ -1,3 +1,6 @@
+/* Reset css */
+
+
 * {
   box-sizing: border-box;
   min-width: 0;
@@ -14,10 +17,14 @@ body { min-height: 100dvh; }
 hl, h2, h3, h4 { text-wrap: Balance; }
 p { text-wrap: pretty; }
 
+/* Master */
+
+
 body {
   background-color: #191c29;
   color: white; 
 }
+
 
 :root {
   --card-height: 50vh;
@@ -32,6 +39,17 @@ body {
   --color-red-primary: #aa130f;
   --color-red-secondary: #902020;
 }
+
+@font-face {
+  font-family: 'naruto_regular';
+  src: url('./assets/naruto-webfontkit/njnaruto.woff2') format('woff2'),
+       url('./assets/naruto-webfontkit/njnaruto.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1{ font-family: 'naruto_regular', Arial, sans-serif; }
+
 
 /* -----HEDER------ */
 
@@ -63,8 +81,8 @@ header {
   margin-top: 0;
 
   font-size: 12vw;
-  font-weight: revert;
-  line-height: 1;
+  font-weight: 500;
+  line-height: 1.2;
   letter-spacing: 3rem;
   text-align: center;
   text-transform: uppercase;
@@ -96,6 +114,7 @@ nav {
   z-index: 5;
   background-color: #191c29;
   padding: 10vh;
+  padding-bottom: 0;
 }
 
 .card_container {
@@ -221,18 +240,21 @@ main {
   height: 100vh;
   width: 100%;
 
-  display: flex;
+  display: none;
   flex-direction: row;
   justify-content: center;
   align-items: center; 
 
   scroll-behavior: smooth;
+
+  letter-spacing: 0.4rem;
+  font-family: 'naruto_regular', Arial, sans-serif; 
 }
 
 .character_container {
   height: 80%;
   width: auto;
-  margin-right: 10%;
+  margin-right: 5%;
 
   display: flex;
   flex-direction: column;
@@ -252,14 +274,14 @@ main {
 }
 
 .character_quote { 
-  font-size: 5vh;
+  font-size: 4vh;
   font-style: italic;
   border-bottom: solid 1px red;
 }
 
 .attributes_container {
   height: 80%;
-  width: 30%;
+  min-width: 30%;
   display: flex;
   flex-direction: row;
   justify-content: space-between; 
@@ -270,10 +292,10 @@ main {
   display: flex;
   flex-direction: column; 
   justify-content: space-around; 
+  
 }
 
 .attributes_container li {
-  font-size: 5vh;
   list-style: none;
 
   display: flex;
@@ -281,16 +303,16 @@ main {
   justify-content: space-around; 
   align-items: center;
 
-  letter-spacing: 0.3rem;
+  margin-right: 80px;
 }
 
 .attributes_title {
-  font-size: 5vh;
-  font-weight: bold;
+  font-size: 3.5rem;
+  /* font-weight: bold; */
 }
 
 .attributes_date {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: normal;
 }
 

@@ -4,83 +4,89 @@
     <meta charset="UTF-16" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./assets/Akatsuki icon.jpg" type="image/x-icon" />
+    <link rel="icon" href="./assets/general images/Akatsuki icon.jpg" type="image/x-icon" />
     <link rel="stylesheet" href="./style.css" />
     <title>Akasuki teem</title>
   </head>
   <body>
     <header>
       <picture class="box box-imagen">
-        <img src="./assets/Akatsuki team.jpg" />
+        <img src="./assets/general images/Akatsuki team.jpg" />
       </picture>
-      <h1 class="header_title">Akatsuki assemble</h1>
+      <h1 class="header_title">AKASUKI ASSEMBLE</h1>
       <div class="box box-shadow">
         <div class="shadow--sticky"></div>
       </div>
     </header>
     <nav>
       <ul class="card_container">
-        <a href="#main">
+
+        <!-- Deidara -->
+        <a href="#MAIN" onclick="switchContent('Deidara')">
           <li class="card">
             <figure class="wrapper">
               <img
-                src="../../assets/Deidara/🔥Deidara🔥.webp"
+                src="./assets/characters/Deidara/🔥Deidara🔥.webp"
                 class="cover-image"
               />
             </figure>      
             <img
-              src="../../assets/Deidara/OIG.tr63Bud.png"
+              src="./assets/characters/Deidara/OIG.tr63Bud.png"
               class="card_title"
             />
             <img
-              src="../../assets/Deidara/Deidara.png"
+              src="./assets/characters/Deidara/Deidara.png"
               class="character"
             />
           </li>
         </a>
-        <a href="#main">
+
+        <!-- Sasori -->
+        <a href="#MAIN" onclick="switchContent('Sasori')">
           <li class="card">
             <figure class="wrapper">
               <img
-                src="../../assets/Deidara/🔥Deidara🔥.webp"
+                src="./assets/characters/Sasori/🔥Sasori🔥.jpg"
                 class="cover-image"
               />
             </figure>      
             <img
-              src="../../assets/Deidara/OIG.tr63Bud.png"
+              src="./assets/characters/Sasori/OIG2.png"
               class="card_title"
             />
             <img
-              src="../../assets/Deidara/Deidara.png"
+              src="./assets/characters/Sasori/Sasori.webp"
               class="character"
             />
           </li>
         </a>
-        <a href="#main">
+
+        <!-- Kisame -->
+        <a href="#MAIN" onclick="switchContent('Kisame')">
           <li class="card">
             <figure class="wrapper">
               <img
-                src="../../assets/Deidara/🔥Deidara🔥.webp"
+                src="./assets/characters/Kisame/🔥Kisame🔥.jpg"
                 class="cover-image"
               />
             </figure>      
             <img
-              src="../../assets/Deidara/OIG.tr63Bud.png"
+              src="./assets/characters/Kisame/OIG3.png"
               class="card_title"
             />
             <img
-              src="../../assets/Deidara/Deidara.png"
+              src="./assets/characters/Kisame/Kisame.webp"
               class="character"
             />
-          </li> 
+          </li>
         </a>
       </ul>
     </nav>
-    <main id="main">
+    <main id="MAIN">
       <figure class="character_container">
-        <img class="character_img" src="../../assets/Deidara/🔥Deidara🔥.webp" alt="Deidara">
-          <h1 class="character_name">デイダラ</h1>
-          <p  class="character_quote">"Katsu"</p>
+        <img class="character_img" id="IMG CARD" src="./assets/Deidara/🔥Deidara🔥.webp" alt="character img of Deidara">
+          <h1 class="character_name" id="KANJI">デイダラ</h1>
+          <p  class="character_quote" id="QUOTE">"Katsu"</p>
       </figure>
       <section class="attributes_container">
         <ul class="attributes_title">
@@ -91,13 +97,14 @@
           <li>Habilidad:</li>
         </ul>
         <ul class="attributes_date">
-          <li>5 de mayo</li>
-          <li>1,66m</li>
-          <li>50.8kg</li>
-          <li>Iwagakure</li>
-          <li>Explosión</li>
+          <li id="BIRTHDAY">5 de mayo</li>
+          <li id="HEIGHT">1,66m</li>
+          <li id="WEIGHT">50.8kg</li>
+          <li id="VILLAGE">Iwagakure</li>
+          <li id="ABILITY">Explosión</li>
         </ul>
       </section>  
     </main>
   </body>
+  <script src="./index.js"></script>
 </html>
